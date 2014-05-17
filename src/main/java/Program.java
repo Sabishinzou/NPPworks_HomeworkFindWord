@@ -9,8 +9,8 @@ public class Program {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("data\\input3.txt")));
-        PrintWriter writer = new PrintWriter(new File("data\\output3.txt"));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("data\\input2.txt")));
+        PrintWriter writer = new PrintWriter(new File("data\\output2.txt"));
 
         WordFinder wordFinder = new WordFinder(reader, writer);
         System.out.println("Введите символьную последовательность(слово):");
