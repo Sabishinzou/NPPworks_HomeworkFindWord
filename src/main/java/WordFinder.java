@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Created by Sabishinzou on 05.05.14.
  */
-public class TextParser {
+public class WordFinder {
 
     private static final char[] letters = {
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
@@ -27,7 +27,7 @@ public class TextParser {
     private int current_position;
     private HashMap<Character, Integer> tableShifts;
 
-    public TextParser(BufferedReader reader, PrintWriter writer) {
+    public WordFinder(BufferedReader reader, PrintWriter writer) {
         this.reader = reader;
         this.writer = writer;
         current_position = 1;
