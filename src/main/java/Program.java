@@ -2,11 +2,17 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
+ * Исполняющий класс
  * Created by Sabishinzou on 05.05.14.
  */
 
 public class Program {
-
+    /**
+     * Исполняет программу, в случае несоответствия алфавита текста
+     * или искомого слова алвавиту из
+     * @see WordFinder то будет обработано исключение.
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("data\\input.txt")));
