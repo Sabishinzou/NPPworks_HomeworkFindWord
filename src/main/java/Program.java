@@ -11,7 +11,6 @@ public class Program {
      * Исполняет программу, в случае несоответствия алфавита текста
      * или искомого слова алвавиту из
      * @see WordFinder то будет обработано исключение.
-     * @throws IOException
      */
     public static void main(String[] args) throws IOException {
 

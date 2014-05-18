@@ -17,7 +17,6 @@ public class WordFinderTest {
     /**
      * Проверяет правильность выполнения программы сравнивая получаемый в тесте
      * файл с заведомо правильным для соответствующего слова и входного файла.
-     * @throws Exception
      */
     @org.junit.Test
     public void testWork() throws Exception {
@@ -51,7 +50,6 @@ public class WordFinderTest {
      * @param f1 файл1
      * @param f2 файл2
      * @return Булевое значение, true если файлы одинаковы, false если различны.
-     * @throws IOException
      */
     private static boolean compareFiles(File f1, File f2) throws IOException {
         FileReader fR1 = new FileReader(f1);

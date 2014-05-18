@@ -61,7 +61,6 @@ public class WordFinder {
     /**
      * Основной метод, где в метод write записывает в файл список, полученный методом findWordPositions
      * @param s слово для поиска
-     * @throws IOException
      */
     public void work(String s) throws IOException {
         write(findWordPositions(s),s);
@@ -71,7 +70,7 @@ public class WordFinder {
     /**
      * вывод в файл списка позиций искомого слова
      * @param list тот список который выводится
-     * @param s
+     * @param s искомое слово
      */
     private void write(LinkedList<Integer> list, String s) {
         writer.println("Слово <" + s + "> встречается на позициях :");
@@ -85,7 +84,6 @@ public class WordFinder {
      * построение таблицы сдвигов и запуск реализации алгоритма
      * @param s искомое слово
      * @return искомый список
-     * @throws IOException
      */
     private LinkedList<Integer> findWordPositions(String s) throws IOException {
         setTableShifts(s);
@@ -97,7 +95,6 @@ public class WordFinder {
     /**
      * Реализация алгоритма Бойера-Мура
      * @return список позиций искомого слова
-     * @throws IOException
      */
     private LinkedList<Integer> readFind() throws IOException {
         LinkedList<Integer> pos_list= new LinkedList<Integer>();
@@ -134,7 +131,6 @@ public class WordFinder {
      * Выполняет сдвиг в файле на определенное число позиций, соответственно меняет текущую позицию
      * @param x величина сдвига
      * @return символ текущей позиции
-     * @throws IOException
      */
     private int fileShift(int x) throws IOException {
         int ci = -1;
